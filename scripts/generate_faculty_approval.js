@@ -1,4 +1,10 @@
-(function executeRule(current, previous /*null rule for after rules*/) {
+1. Business Rule: Generate Faculty Approval for Internship Request
+Purpose: Triggers on new request submission (after insert), sets initial statuses, creates the Faculty approval record, and fires an event for notifications.
+Table: Internship Request (e.g., x_1729782_internsh_internship_request)
+When to run: after insert (no update checked, no Filter Conditions)
+    
+    code:
+    (function executeRule(current, previous /*null rule for after rules*/) {
 
     // --- PART 1: Set Initial Statuses ---
     // These updates happen immediately upon record insertion
