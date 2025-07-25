@@ -5,7 +5,8 @@ When to run: after update
 Filter Conditions:State | changes to | Approved
   OR
 State | changes to | Rejected
-  
+
+  code:
   (function executeRule(current, previous /*null rule for after rules*/) {
 
     // Get the Internship Request record that this approval is for
